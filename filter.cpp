@@ -40,7 +40,7 @@ fftw_complex* createIRF(int32_t* signalProp, int32_t totalSize, int32_t N) {
         dt = (signalDuration - Tn);
         arg = 3.14 * dt * lfmBand * (-1. + dt / signalDuration);
         res[i][0] = ampl * cos(arg);
-        res[i][1] = ampl * sin(arg);
+        res[i][1] = -ampl * sin(arg);
     }
     return res;
 }
