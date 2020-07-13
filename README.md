@@ -1,1 +1,3 @@
 # TestTaskConvulation
+
+Start "run.sh"
